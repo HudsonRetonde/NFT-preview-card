@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);    
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;   
+}
+
+.container{    
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.box1{
+    background-color: hsl(216, 50%, 16%);
+    margin: 2rem 1rem;
+    padding: 20px;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+.imgEquilibrium {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.imgEquilibrium img{
+    width: 100%;    
+}
+
+.imgView {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: hsla(178, 100%, 50%, 0.579);
+}
+
+.imgView img {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+} 
+
+.imgEquilibrium:hover .imgView {
+    display: block;
+    cursor: pointer;
+}
+
+.texto1 a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-weight: 650;
+    font-size: 21px;
+    display: inline-block;
+    padding: 10px 0;        
+}
+
+.texto1 a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.icone-ethereum, .icone-clok {
+    display: flex;
+    align-items: center;     
+}
+
+.icone-ethereum p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 500;
+    padding-left: 8px;
+}
+
+.icone-clok p {
+    padding-left: 8px;
+}
+
+hr {
+    border-color: hsl(215, 32%, 27%);
+}
+
+.avatar {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border:  1.5px solid hsl(0, 0%, 100%);
+    margin-right: 10px;
+}
+
+.avatar a {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.avatar a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
+
